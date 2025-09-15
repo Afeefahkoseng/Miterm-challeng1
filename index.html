@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Midterm Challenge (Short)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav-desktop" id="top">
+      <a class="brand" href="#top">
+        <!-- simple inline SVG logo -->
+        <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="4" fill="none"/>
+          <text x="50" y="59" text-anchor="middle" font-size="32" font-family="Arial">MC</text>
+        </svg>
+        <span>Midterm</span>
+      </a>
+      <ul class="links">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#palestine">Palestine</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#bottom">Bottom</a></li>
+      </ul>
+    </nav>
+
+    <nav class="tab-bar">
+      <a href="#top">Top</a><a href="#introduction">Introduction</a><a href="#palestine">Palestine</a>
+    </nav>
+
+    <div class="mobile">
+      <button id="hamb">☰</button>
+      <div id="mobPanel" hidden>
+        <a href="#top">Top</a><a href="#introduction">Introduction</a><a href="#palestine">Palestine</a>
+        <a href="#contact">Contact</a><a href="#bottom">Bottom</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="introduction" class="intro">
+      <div><h1>Build Your Mindset</h1><p>ครึ่งความสูงของจอบน laptop (>=1024px)</p></div>
+    </section>
+
+    <section id="palestine" class="cards">
+      <h2>Palestine Governorates</h2>
+      <div class="grid">
+        <!-- ตัวอย่าง 3 การ์ด — คัดลอกเพิ่มเป็น 15 ตามต้องการ -->
+        <article class="card"><img src="https://via.placeholder.com/400x250?text=Bethlehem" alt="Bethlehem"><h3>Bethlehem</h3><p>Historic city.</p></article>
+        <article class="card"><img src="https://via.placeholder.com/400x250?text=Hebron" alt="Hebron"><h3>Hebron</h3><p>Ancient city.</p></article>
+        <article class="card"><img src="https://via.placeholder.com/400x250?text=Gaza" alt="Gaza"><h3>Gaza</h3><p>Coastal city.</p></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="post" novalidate>
+        <label> Name <input name="name" required minlength="2"></label>
+        <label> Subject <input name="subject" required></label>
+        <label> Phone <input name="phone" type="tel" required pattern="^\d+$" title="ตัวเลขเท่านั้น"></label>
+        <label> Email <input name="email" type="email" required pattern="^[A-Za-z0-9._%+-]+@ftu\.ac\.th$" title="ใช้ @ftu.ac.th เท่านั้น"></label>
+        <label> Secret <input name="secret" type="password" required
+          pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}"
+          title="อย่างน้อย8 ตัว, มีพิมพ์ใหญ่-เล็ก, ตัวเลข, special char"></label>
+        <label> Message <textarea name="message" rows="4" required></textarea></label>
+        <div class="actions"><button type="submit">Send</button><button type="reset">Reset</button></div>
+      </form>
+    </section>
+  </main>
+
+  <footer id="bottom">© <span id="y"></span> Midterm</footer>
+
+  <button id="topBtn" class="gotop">↑</button>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    const hamb = document.getElementById('hamb'), panel = document.getElementById('mobPanel');
+    hamb?.addEventListener('click', ()=> { panel.toggleAttribute('hidden'); });
+    // go top
+    const topBtn = document.getElementById('topBtn');
+    window.addEventListener('scroll', ()=> topBtn.style.display = window.scrollY>200 ? 'block' : 'none');
+    topBtn.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
+  </script>
+</body>
+</html>
