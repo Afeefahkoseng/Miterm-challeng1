@@ -42,3 +42,71 @@ footer {text-align:center; padding:20px; background:#3498db; color:white;}
 @media (max-width:768px){
     /* Hamburger menu logic can be added */
 }
+
+/* Mindset section */
+.mindset {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Card image */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Card title */
+.card h3 {
+    margin: 10px 0 5px 0;
+}
+
+/* --- ใส่โค้ดใหม่ที่นี่ --- */
+.navbar { display: flex; }
+
+@media screen and (max-width: 1024px) {
+    .navbar { display: none; }
+    .tab-bar { display: flex; }
+}
+
+@media screen and (max-width: 768px) {
+    .navbar, .tab-bar { display: none; }
+    .hamburger { display: block; }
+}
+
+/* Contact form */
+.contact-form input, .contact-form textarea, .contact-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Go to Top Button */
+#topBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
