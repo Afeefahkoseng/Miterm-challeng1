@@ -110,3 +110,136 @@ footer {text-align:center; padding:20px; background:#3498db; color:white;}
     color: white;
     cursor: pointer;
 }
+
+
+/* Navigation links */
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Tab Bar (Tablet) */
+.tab-bar {
+    display: none;
+    justify-content: space-around;
+    background-color: #3498db;
+    padding: 10px;
+}
+
+.tab-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #3498db;
+}
+
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #3498db;
+    position: absolute;
+    top: 60px; /* ปรับตาม navbar height */
+    right: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.mobile-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.mobile-menu a:hover {
+    background-color: #2980b9;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+    color: #333;
+    margin-top: 40px;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+
+/* --- Tab Bar --- */
+.tab-bar {
+    display: none;
+    justify-content: space-around;
+    background: #3498db;
+    padding: 10px;
+}
+.tab-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* --- Hamburger Menu --- */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    background: #3498db;
+}
+.mobile-menu a {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #2980b9;
+}
+
+/* Checkbox hack for mobile menu */
+#menu-toggle { display: none; }
+#menu-toggle:checked + .hamburger + .mobile-menu {
+    display: flex;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 1024px) {
+    .navbar { display: none; }
+    .tab-bar { display: flex; }
+}
+@media screen and (max-width: 768px) {
+    .tab-bar { display: none; }
+    .hamburger { display: block; }
+}
+
