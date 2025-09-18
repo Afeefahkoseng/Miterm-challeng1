@@ -1,108 +1,171 @@
-<!doctype html>
-<html lang="th">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Midterm Challenge (Short)</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Challenge</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav class="nav-desktop" id="top">
-      <a class="brand" href="#top">
-        <!-- simple inline SVG logo -->
-        <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true">
-          <circle cx="50" cy="50" r="48" stroke="currentColor" stroke-width="4" fill="none"/>
-          <text x="50" y="59" text-anchor="middle" font-size="32" font-family="Arial">MC</text>
-        </svg>
-        <span>Midterm</span>
-      </a>
-      <ul class="links">
-        <li><a href="#top">Top</a></li>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#palestine">Palestine</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#bottom">Bottom</a></li>
-      </ul>
-    </nav>
 
-    <nav class="tab-bar">
-      <a href="#top">Top</a><a href="#introduction">Introduction</a><a href="#palestine">Palestine</a>
+<!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <!-- SVG Logo -->
+        <div class="logo">
+            <svg width="50" height="50" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" fill="#3498db"/>
+                <text x="50%" y="55%" text-anchor="middle" fill="white" font-size="20" font-family="Arial" dy=".3em">MC</text>
+            </svg>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#top">Top</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#palestine">Palestine</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#bottom">Bottom</a></li>
+        </ul>
     </nav>
+</header>
 
-    <div class="mobile">
-      <button id="hamb">☰</button>
-      <div id="mobPanel" hidden>
-        <a href="#top">Top</a><a href="#introduction">Introduction</a><a href="#palestine">Palestine</a>
-        <a href="#contact">Contact</a><a href="#bottom">Bottom</a>
-      </div>
+<!-- Build Your Mindset Section -->
+<section id="intro" class="mindset">
+    <h1>Build Your Mindset</h1>
+    <p>“A strong mindset is the key to achieving your goals.”</p>
+</section>
+
+<!-- Palestine Cards -->
+<section id="palestine" class="cards">
+    <h2>Palestine Governorates</h2>
+    <div class="card-container">
+        <!-- Example Card -->
+        <div class="card">
+            <img src="https://cdn.britannica.com/75/262575-050-C71F1633/Bethlehem-West-Bank.jpg" alt="Bethlehem">
+            <h3>Bethlehem</h3>
+            <p>A historic city known for the birthplace of Jesus Christ.</p>
+        </div>
+
+         <div class="card">
+            <img src="https://cdn.britannica.com/80/125080-050-ED451A77/Hebron.jpg" alt="Hebron">
+            <h3>Hebron</h3>
+            <p>Known for its ancient city and cultural heritage.</p>
+        </div>
+
+         <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Jenin-new.jpg" alt="Jenin">
+            <h3>Jenin</h3>
+            <p>A city with rich agricultural land and historical significance.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.britannica.com/05/182005-050-032BE428/Jericho-West-Bank.jpg" alt="Jericho">
+            <h3>Jericho</h3>
+            <p>One of the oldest inhabited cities in the world.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Nablus_2013.jpg" alt="Nablus">
+            <h3>Nablus</h3>
+            <p>Famous for soap making and its historic old city.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.travelpalestine.ps/public/files/image/destinations/qalqilya.jpg" alt="Qalqilya">
+            <h3>Qalqilya</h3>
+            <p>A city surrounded by green orchards and agricultural lands.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://www.islamiclandmarks.com/wp-content/uploads/2019/04/1.-The-City-of-Jerusalem-1.jpg" alt="Quds (Jerusalem)">
+            <h3>Quds (Jerusalem)</h3>
+            <p>A holy city with religious significance for multiple faiths.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://cdn.britannica.com/82/125082-050-2E5F0FC5/neighborhood-Ramallah.jpg" alt="Ramallah">
+            <h3>Ramallah</h3>
+            <p>A modern city known as the administrative capital.</p>
+        </div>
+
+         <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Deir_al-Balah.jpg" alt="Deir al-Balah">
+            <h3>Deir al-Balah</h3>
+            <p>Known for its date palm gardens and coastline.</p>
+        </div>
+
+          <div class="card">
+            <img src="https://www.arabnews.com/sites/default/files/styles/n_670_395/public/2025/08/19/4631848-1685315436.jpg?itok=djUqa_y2" alt="Gaza">
+            <h3>Gaza</h3>
+            <p>A coastal region facing humanitarian crises and destruction from ongoing conflicts.</p>
+        </div>
+
+         <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Israeli_destruction_on_al-Seqaly_Street_in_Khan_Younis%2C_Gaza_War%2C_June_11_2024.jpg" alt="Khan Yunis">
+            <h3>Khan Yunis</h3>
+            <p>A city in southern Gaza devastated by airstrikes, with widespread destruction and displacement.</p>
+        </div>
+
+          <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/An_aerial_view_showing_destruction_in_Rafah_after_Israeli_forces_withdrawal_and_as_the_ceasefire_took_hold,_Gaza_Strip.jpg" alt="Rafah">
+            <h3>Rafah</h3>
+            <p>A southern Gaza region heavily affected by conflict, showing widespread damage and destruction.</p>
+        </div>
+
+         <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Tubas.jpg" alt="Tubas">
+            <h3>Tubas</h3>
+            <p>A small city with rich agricultural lands.</p>
+        </div>
+
+         <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Aerial_view_of_Tulkarm_08.jpg" alt="Tulkarm">
+            <h3>Tulkarm</h3>
+            <p>Known for its old markets and rural surroundings.</p>
+        </div>
+
+         <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Salfit2024.jpg" alt="Salfit">
+            <h3>Salfit</h3>
+            <p>Known for its hills and olive trees.</p>
+        </div>
     </div>
-  </header>
+</section>
 
-  <main>
-    <section id="introduction" class="intro">
-      <div><h1>Build Your Mindset</h1><p>ครึ่งความสูงของจอบน laptop (>=1024px)</p></div>
-    </section>
+<!-- Contact Form -->
+<section id="contact" class="contact-form">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="subject" placeholder="Subject" required>
+        <input type="tel" name="phone" placeholder="Phone" pattern="[0-9]{10}" required>
+        <input type="email" name="email" placeholder="Email @ftu.ac.th" pattern="[a-zA-Z0-9._%+-]+@ftu\.ac\.th" required>
+        <input type="password" name="secret" placeholder="Secret Word" 
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&]).{8,}" 
+            title="Must contain 8 or more characters with uppercase, lowercase, number & special char" required>
+        <textarea name="message" placeholder="Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
 
-    <section id="palestine" class="cards">
-      <h2>Palestine Governorates</h2>
-      <div class="grid">
-        <!-- ตัวอย่าง 3 การ์ด — คัดลอกเพิ่มเป็น 15 ตามต้องการ -->
-        <article class="card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcUx7I2xPyxp_XiAB0iIJZk5gh_jUuDqBx3A&s" alt="Bethlehem"><h3>Bethlehem</h3><p>Historic city.</p></article>
-        <article class="card"><img src="https://cdn.britannica.com/80/125080-050-ED451A77/Hebron.jpg" alt="Hebron"><h3>Hebron</h3><p>Ancient city.</p></article>
-        <article class="card"><img src="https://www.icj.org/wp-content/uploads/2025/04/Gaza-Palestina-.webp" alt="Gaza"><h3>Gaza</h3><p>Coastal city.</p></article>
-      </div>
-    </section>
+<!-- Footer -->
+<footer id="bottom">
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+</footer>
 
-<article class="card">
-  <img src="https://img.lemde.fr/2022/04/14/0/0/6000/4000/664/0/75/0/a3c263e_442425329-dsc07880.jpg" alt="Jenin">
-  <h3>Jenin</h3>
-  <p>Old Town and Agricultural Park</p>
-</article>
+<!-- Go to Top Button -->
+<button id="topBtn" onclick="topFunction()">↑</button>
 
+<script>
+    // Go to Top
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function() {
+        topBtn.style.display = (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) ? "block" : "none";
+    };
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 
-<article class="card">
-  <img src="https://cdn.audleytravel.com/5237/3740/79/15975497-mount-of-temptation-jericho.jpg" alt="Jericho">
-  <h3>Jericho</h3>
-  <p>desert scenery</p>
-</article>
-
-
-<article class="card">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Nablus_Old_Town_streets.jpg/960px-Nablus_Old_Town_streets.jpg" alt="Nablus">
-  <h3>Nablus</h3>
-  <p>Old Architecture Buildings</p>
-</article>
-
-
-    <section id="contact" class="contact">
-      <h2>Contact Me</h2>
-      <form action="#" method="post" novalidate>
-        <label> Name <input name="name" required minlength="2"></label>
-        <label> Subject <input name="subject" required></label>
-        <label> Phone <input name="phone" type="tel" required pattern="^\d+$" title="ตัวเลขเท่านั้น"></label>
-        <label> Email <input name="email" type="email" required pattern="^[A-Za-z0-9._%+-]+@ftu\.ac\.th$" title="ใช้ @ftu.ac.th เท่านั้น"></label>
-        <label> Secret <input name="secret" type="password" required
-          pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{8,}"
-          title="อย่างน้อย8 ตัว, มีพิมพ์ใหญ่-เล็ก, ตัวเลข, special char"></label>
-        <label> Message <textarea name="message" rows="4" required></textarea></label>
-        <div class="actions"><button type="submit">Send</button><button type="reset">Reset</button></div>
-      </form>
-    </section>
-  </main>
-
-  <footer id="bottom">© <span id="y"></span> Midterm</footer>
-
-  <button id="topBtn" class="gotop">↑</button>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-    const hamb = document.getElementById('hamb'), panel = document.getElementById('mobPanel');
-    hamb?.addEventListener('click', ()=> { panel.toggleAttribute('hidden'); });
-    // go top
-    const topBtn = document.getElementById('topBtn');
-    window.addEventListener('scroll', ()=> topBtn.style.display = window.scrollY>200 ? 'block' : 'none');
-    topBtn.addEventListener('click', ()=> window.scrollTo({top:0,behavior:'smooth'}));
-  </script>
 </body>
 </html>
