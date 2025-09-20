@@ -5,10 +5,10 @@ a {text-decoration:none; color:#333;}
 h1,h2,h3 {color:#333;}
 
 /* Navbar */
-.navbar {display:flex; justify-content:space-between; align-items:center; padding:10px 20px; background:#3498db; color:white;}
+.navbar {display:flex; justify-content:space-between; align-items:center; padding:10px 20px; background:#2980b9; color:white;}
 .nav-links {list-style:none; display:flex; gap:15px;}
 .nav-links li a {color:white; padding:5px 10px; transition:0.3s;}
-.nav-links li a:hover {background:white; color:#3498db; border-radius:5px;}
+.nav-links li a:hover {background:white; color:#2980b9; border-radius:5px;}
 
 /* Mindset Section */
 .mindset {height:50vh; display:flex; flex-direction:column; justify-content:center; align-items:center; background:#ecf0f1; text-align:center;}
@@ -24,14 +24,15 @@ h1,h2,h3 {color:#333;}
 .contact-form {padding:50px 20px; background:#ecf0f1;}
 .contact-form form {display:flex; flex-direction:column; gap:15px; max-width:500px; margin:auto;}
 .contact-form input, .contact-form textarea {padding:10px; border:1px solid #ccc; border-radius:5px;}
-.contact-form button {padding:10px; background:#3498db; color:white; border:none; cursor:pointer; border-radius:5px;}
+.contact-form button {padding:10px; background:#2980b9
+; color:white; border:none; cursor:pointer; border-radius:5px;}
 .contact-form button:hover {background:#2980b9;}
 
 /* Footer */
-footer {text-align:center; padding:20px; background:#3498db; color:white;}
+footer {text-align:center; padding:20px; background:#2980b9; color:white;}
 
 /* Go to top button */
-#topBtn {position:fixed; bottom:30px; right:30px; display:none; padding:10px 15px; background:#3498db; color:white; border:none; border-radius:50%; cursor:pointer;}
+#topBtn {position:fixed; bottom:30px; right:30px; display:none; padding:10px 15px; background:#2980b9; color:white; border:none; border-radius:50%; cursor:pointer;}
 
 /* Responsive Navbar */
 @media (max-width:1024px){
@@ -74,7 +75,7 @@ footer {text-align:center; padding:20px; background:#3498db; color:white;}
     margin: 10px 0 5px 0;
 }
 
-/* --- ใส่โค้ดใหม่ที่นี่ --- */
+/* --- โค้ดใหม่ --- */
 .navbar { display: flex; }
 
 @media screen and (max-width: 1024px) {
@@ -106,7 +107,7 @@ footer {text-align:center; padding:20px; background:#3498db; color:white;}
     font-size: 18px;
     border: none;
     border-radius: 50%;
-    background-color: #3498db;
+    background-color: #2980b9;
     color: white;
     cursor: pointer;
 }
@@ -130,7 +131,7 @@ footer {text-align:center; padding:20px; background:#3498db; color:white;}
 .tab-bar {
     display: none;
     justify-content: space-around;
-    background-color: #3498db;
+    background-color: #2980b9;
     padding: 10px;
 }
 
@@ -145,13 +146,13 @@ footer {text-align:center; padding:20px; background:#3498db; color:white;}
     display: none;
     font-size: 30px;
     cursor: pointer;
-    color: #3498db;
+    color: #2980b9;
 }
 
 .mobile-menu {
     display: none;
     flex-direction: column;
-    background-color: #3498db;
+    background-color: #2980b9;
     position: absolute;
     top: 60px; /* ปรับตาม navbar height */
     right: 20px;
@@ -198,7 +199,7 @@ footer {
 .tab-bar {
     display: none;
     justify-content: space-around;
-    background: #3498db;
+    background: #2980b9;
     padding: 10px;
 }
 .tab-bar a {
@@ -217,7 +218,7 @@ footer {
 .mobile-menu {
     display: none;
     flex-direction: column;
-    background: #3498db;
+    background: #2980b9;
 }
 .mobile-menu a {
     padding: 10px;
